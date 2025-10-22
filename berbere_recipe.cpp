@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 void displayIngredients(string input1[], string input2[], int n)
 {
   for(int i = 0; i < n; i++) {
-     cout << i + 1 << ". " << input1[i]<<" "<<input2[i]<< "\n";
+     cout << i + 1 << ". " << input1[i]<<"\t"<<input2[i]<< "\n";
   }
 }
 int main() {

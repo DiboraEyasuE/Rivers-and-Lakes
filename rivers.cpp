@@ -10,7 +10,7 @@ string riverName = "Abay";
    	bool transBoundary = false;
   	cout<< "The largest lake in Ethiopia is " << lakeName << endl;
   	cout<< "It is the source of the river " << riverName << endl;
-cout<< lakeName <<"covers an area of" <<surfaceArea << " square km"<<endl;
+cout<< lakeName <<" covers an area of " <<surfaceArea << " square km"<<endl;
 cout<< "It is  " << width<< " km wide and "<< length << "km long "<<endl;
 cout<< "Is transboundary? " << transBoundary <<endl;
 lakeName = "Nigat";
@@ -19,7 +19,6 @@ cout<< "The largest lake in Ethiopia is " << lakeName << endl;
 }
 int main() {
 	example1();
-    example1();
 	return 0;
 }
 /*
@@ -34,6 +33,6 @@ Is transboundary? false - unexpested answer - it gave zero not false since false
 2.	How can we change the largest Lake from “Tana” to “Nigat”?
 lakename = "Nigat"
 3.	What else should we change in the code fragment if we change “Tana” to “Nigat”? 
-It is the source of the river - this should be changed to "It is not...
+It is the source of the river - this should be changed to "It is not the source of the river Abay...
 and its corresponding length width and transboundary state should be used.
 */
