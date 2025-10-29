@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 using namespace std;
 
@@ -46,22 +47,30 @@ string* calculate(int n, const int mark[])
     return grade;
 }
 
-void display(int n, const string stdName[],const string mark[], const string grade)
+void display(int n, const string stdName[],const int mark[], const string grade[])
 {
+    cout << left << setw(10) << "Name "
+        << setw(10) << "Mark " 
+        <<  setw(10) << "Grade " << endl;
     for (int i = 0; i < n; i++)
     {
-        cout << "Name: " << stdName[i]
-             << "\tMark: " << mark[i] 
-             << "\tGrade: " << grade[i];
+        cout << left << setw(10)<< stdName[i] << setw(10) << mark[i] << setw(10) << grade[i] << endl;
     }
 }
 
 int main()
 {
     string* name;
+    string* stdGrade;
     int size;
     cout << "Number of students: ";
     cin >> size;
-    int mark[size];
+    int* mark = new int[size];
     name = accept(size, mark);
+    stdGrade = calculate(size, mark);
+    display(size, name, mark, stdGrade);
+    delete[] name;
+    delete[] stdGrade;
+    delete[] mark;
+    return 0;
 }
