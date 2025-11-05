@@ -20,6 +20,10 @@ void accept(string[], int);
 void display(string[], string[], int);
 
 int main(){
+    cout << "-----------------------------------------------\n";
+    cout << "Welcome to the Swap Program!" << endl;
+    cout << "This program swaps \n\t\t-integers, \n\t\t-floats and \n\t\t                                                                                                                                                                                                                                                                 -strings using function overloading."
+    << "\n-----------------------------------------------\n";
     int size, choice;
     int * oldint;
     string* oldstr;
